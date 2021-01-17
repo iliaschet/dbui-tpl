@@ -1,3 +1,1 @@
-function name(params) {
-    
-}
+1111111
