@@ -17,7 +17,7 @@ git clone https://github.com/iliaschet/dbui-tpl.git .
 
 Скрипт осуществляет последовательно следующие действия:
 
---- ```javascript
+```javascript
 // Переименовываем удалённый репозиторий с шаблоном "origin" -> "tpl"
 git remote rename origin tpl
 // Добавляем удаленный репозиторий "продуктового" проекта в качестве origin
@@ -25,7 +25,7 @@ git remote rename origin tpl
 // Настраиваем локальную ветку main с tpl на origin
 `git branch -M main`
 `git push -u origin main`
-``` ----
+```
 
 ## Использование ранее созданного "продуктового" проекта в команде:
 
