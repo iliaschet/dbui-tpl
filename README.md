@@ -59,3 +59,9 @@ git merge tpl/main
 
 ! Проверить какая ветка на какой удаленный репозиторий смотрит:
 `git branch -lvv`
+
+
+
+
+npm run init -- --path="https://github.com/iliaschet/dbui-real.git"
+npm run existing -- --path="https://github.com/iliaschet/dbui-real.git"
