@@ -2,65 +2,66 @@
 
 1. Создаем на основе шаблона каталог "продуктового" проекта (dbui-real)
 
-`mkdir [product-folder] && cd "$_"`
+```sh
+mkdir [product-folder] && cd "$_"
+git clone https://github.com/iliaschet/dbui-tpl.git .
+```
 
-`git clone https://github.com/iliaschet/dbui-tpl.git .`
+, где `[product-folder]` - наименование каталога с "продуктовым" проектом.
 
-2. Переименовываем удалённый репозиторий с шаблоном "origin" -> "tpl"
+2. Запускаем скрипт инициализации нового проекта
+
+`npm run init [https://github.com/iliaschet/dbui-real.git]`
+
+, где `[https://github.com/iliaschet/dbui-real.git]` - адрес репозитория "продуктового" проекта.
+
+Скрипт осуществляет последовательно следующие действия:
+
+---
+```
+- Переименовываем удалённый репозиторий с шаблоном "origin" -> "tpl"
 
 `git remote rename origin tpl`
 
-3. Добавляем удаленный репозиторий "продуктового" проекта в качестве origin
+- Добавляем удаленный репозиторий "продуктового" проекта в качестве origin
 
-`git remote add origin https://github.com/iliaschet/dbui-real.git`
+`git remote add origin [url]`
 
-4. Настраиваем локальную ветку main с tpl на origin
+- Настраиваем локальную ветку main с tpl на origin
 
 `git branch -M main`
 
 `git push -u origin main`
-
-## Быстрый старт:
-
-mkdir dbui-real
-cd dbui-real
-git clone https://github.com/iliaschet/dbui-tpl.git .
-git remote rename origin tpl
-git remote add origin https://github.com/iliaschet/dbui-real.git
-git branch -M main
-git push -u origin main
+```
+----
 
 ## Использование ранее созданного "продуктового" проекта в команде:
 
-`
+```sh
 mkdir [product-folder] && cd "$_"
-
 git clone https://github.com/iliaschet/dbui-real.git .
-`
-
-`git remote add tpl https://github.com/iliaschet/dbui-tpl.git`
-
+git remote add tpl https://github.com/iliaschet/dbui-tpl.git
+```
 
 ## Действия в "продуктовом" проекте в случае изменения шаблона:
 
 Забираем изменения по шаблону в "продуктовый" проект
 
-`
+`git pull tpl main`
+
+или 
+
+```
 git fetch tpl
-
 git merge tpl/main
-`
+```
+
 Далее происходит решение возможных merge-конфликтов
-
-
-3. В .gitignore комментируем обратно строку `# app/`
 
 ## Дополнительно:
 
-! Проверить какая ветка на какой удаленный репозиторий смотрит:
+Для проверки списка имен и адресов удаленных репозиториев:
+`git remote -v`
+
+Для проверки списка веток и на какой удаленный репозиторий они смотрят:
 `git branch -lvv`
-
-
-npm run init -- --path="https://github.com/iliaschet/dbui-real.git"
-
-npm run existing -- --path="https://github.com/iliaschet/dbui-real.git"
