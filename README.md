@@ -3,8 +3,7 @@
 ### Создаем на основе шаблона каталог "продуктового" проекта (dbui-real)
 
 ```sh
-mkdir [product-folder] && cd "$_"
-git clone https://github.com/iliaschet/dbui-tpl.git .
+mkdir [product-folder] && cd "$_" && git clone https://github.com/iliaschet/dbui-tpl.git .
 ```
 
 , где `[product-folder]` - наименование каталога с "продуктовым" проектом.
