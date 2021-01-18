@@ -11,9 +11,9 @@ git clone https://github.com/iliaschet/dbui-tpl.git .
 
 ### Запускаем скрипт инициализации нового проекта
 
-`npm run init [https://github.com/iliaschet/dbui-real.git]`
+`npm run init [https://github.com/iliaschet/product-project.git]`
 
-, где `[https://github.com/iliaschet/dbui-real.git]` - адрес репозитория "продуктового" проекта.
+, где `[url]` - адрес репозитория "продуктового" проекта.
 
 Скрипт осуществляет последовательно следующие действия:
 
@@ -39,7 +39,9 @@ git remote add tpl https://github.com/iliaschet/dbui-tpl.git
 
 Забираем изменения по шаблону в "продуктовый" проект
 
-`git pull tpl main`
+```
+git pull tpl main
+```
 
 или 
 
