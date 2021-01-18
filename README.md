@@ -1,6 +1,7 @@
 ## Создание нового "продуктового" проекта:
 
 1. Создаем на основе шаблона каталог "продуктового" проекта (dbui-real)
+
 `mkdir [product-folder] && cd "$_"`
 `git clone https://github.com/iliaschet/dbui-tpl.git .`
 
