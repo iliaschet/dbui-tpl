@@ -4,6 +4,7 @@
 
 `
 mkdir [product-folder] && cd "$_"
+
 git clone https://github.com/iliaschet/dbui-tpl.git .
 `
 
@@ -36,6 +37,7 @@ git push -u origin main
 
 `
 mkdir [product-folder] && cd "$_"
+
 git clone https://github.com/iliaschet/dbui-real.git .
 `
 
@@ -48,6 +50,7 @@ git clone https://github.com/iliaschet/dbui-real.git .
 
 `
 git fetch tpl
+
 git merge tpl/main
 `
 Далее происходит решение возможных merge-конфликтов
@@ -59,8 +62,6 @@ git merge tpl/main
 
 ! Проверить какая ветка на какой удаленный репозиторий смотрит:
 `git branch -lvv`
-
-
 
 
 npm run init -- --path="https://github.com/iliaschet/dbui-real.git"
