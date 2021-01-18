@@ -1,0 +1,19 @@
+{
+  "name": "product-folder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "init": "git remote rename origin tpl && git remote add origin --path && git branch -M main && git push -u origin main",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iliaschet/dbui-tpl.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iliaschet/dbui-tpl/issues"
+  },
+  "homepage": "https://github.com/iliaschet/dbui-tpl#readme"
+}
