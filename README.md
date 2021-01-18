@@ -4,7 +4,6 @@
 
 `
 mkdir [product-folder] && cd "$_"
-
 git clone https://github.com/iliaschet/dbui-tpl.git .
 `
 
