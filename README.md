@@ -10,7 +10,7 @@ mkdir [product-folder] && cd "$_" && git clone https://github.com/iliaschet/dbui
 
 ### Запускаем скрипт инициализации нового проекта
 
-`npm run init [https://github.com/iliaschet/product-project.git]`
+`url=[url] npm run init`
 
 , где `[url]` - адрес репозитория "продуктового" проекта.
 
