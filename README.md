@@ -3,6 +3,7 @@
 1. Создаем на основе шаблона каталог "продуктового" проекта (dbui-real)
 
 `mkdir [product-folder] && cd "$_"`
+
 `git clone https://github.com/iliaschet/dbui-tpl.git .`
 
 2. Переименовываем удалённый репозиторий с шаблоном "origin" -> "tpl"
@@ -15,10 +16,9 @@
 
 4. Настраиваем локальную ветку main с tpl на origin
 
-`
-git branch -M main
-git push -u origin main
-`
+`git branch -M main`
+
+`git push -u origin main`
 
 ## Быстрый старт:
 
