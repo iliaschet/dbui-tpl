@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "init": "git remote rename origin tpl && git remote add origin $url && git branch -M main && git push -u origin main"
+    "init": "git remote rename origin tpl && git remote add origin $url && git branch -M main && git push -u origin main",
+    "added": "git remote add tpl https://github.com/iliaschet/dbui-tpl.git"
   },
   "repository": {
     "type": "git",
