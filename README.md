@@ -22,10 +22,10 @@ mkdir [product-folder] && cd "$_" && git clone https://github.com/iliaschet/dbui
 // Переименовываем удалённый репозиторий с шаблоном "origin" -> "tpl"
 git remote rename origin tpl
 // Добавляем удаленный репозиторий проекта платформенного продукта в качестве origin
-`git remote add origin [url]`
+git remote add origin [url]
 // Настраиваем локальную ветку main с tpl на origin
-`git branch -M main`
-`git push -u origin main`
+git branch -M main
+git push -u origin main
 ```
 
 ## Использование ранее созданного проекта платформенного продукта:
