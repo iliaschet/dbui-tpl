@@ -7,7 +7,7 @@
 mkdir [product-folder] && cd "$_" && git clone https://github.com/iliaschet/dbui-tpl.git .
 ```
 
-, где `[product-folder]` - наименование каталога с "продуктовым" проектом.
+, где `[product-folder]` - наименование создаваемого каталога для "продуктового" проекта.
 
 ### Запускаем скрипт инициализации нового проекта
 
@@ -30,10 +30,11 @@ git remote rename origin tpl
 ## Использование ранее созданного "продуктового" проекта в команде:
 
 ```sh
-mkdir [product-folder] && cd "$_"
-git clone https://github.com/iliaschet/dbui-real.git .
+mkdir [product-folder] && cd "$_" && git clone [url] .
 git remote add tpl https://github.com/iliaschet/dbui-tpl.git
 ```
+
+, где `[product-folder]` - наименование создаваемого каталога для "продуктового" проекта, а `[url]` - адрес репозитория "продуктового" проекта.
 
 ## Действия в "продуктовом" проекте в случае изменения шаблона:
 
